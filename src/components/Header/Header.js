@@ -66,16 +66,16 @@ const Header = (props) => {
                                 <Link onClick={() => { props.filterResult('Women') }}  className="nav-link" href="#">Women</Link>
                             </li> */}
 
-              <li className="nav-item pe-2">
+              {/* <li className="nav-item pe-2">
                 <Link as={Link} to="/blog" className="nav-link" href="#">
                   Blog
                 </Link>
-              </li>
-              <li className="nav-item pe-2">
+              </li> */}
+              {/* <li className="nav-item pe-2">
                 <Link as={Link} to="/cart" className="nav-link" href="#">
                   Cart
                 </Link>
-              </li>
+              </li> */}
             </ul>
             {/* search-user-cart */}
             <div className="header-right d-flex fs-3">
