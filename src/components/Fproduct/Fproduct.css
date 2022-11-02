@@ -4,7 +4,7 @@
     cursor: grab;
 }
 .feature-div {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
 }
 .feature-div img {
