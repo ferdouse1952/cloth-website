@@ -48,18 +48,16 @@ const Review = () => {
         <div className='container'>
             <div className="testimonialbg-color">
                 <div className="row review-row">
-                    <div className='col-lg-8 col-7 testimonial-col'>
+                    <div className='col-lg-6 col-md-7 testimonial-col'>
                         <Slider {...settings}>
                             {
                                 reviewItems.map(testimonialItem => <ReviewImgContent
                                     testimonialItem={testimonialItem}
-                                >
-
-                                </ReviewImgContent>)
+                                ></ReviewImgContent>)
                             }
                         </Slider>
                     </div>
-                    <div className="col-lg-4 col-5 review-img-col ">
+                    <div className="col-lg-6 col-md-5 review-img-col ">
                         <div className="review-img">
                             <img src={reviewimg} alt="" />
                         </div>
