@@ -47,10 +47,10 @@ const Sliders = () => {
         <div className='sliderOne slider'>
           <div className="container">
             <div className="row d-flex justify-content-center align-items-center">
-              <div className="col-6">
+              <div className="col-md-6">
                 <h1 className='text-muted slider-text'>Women's <span className='slider-span-text'>T-Shirt</span></h1>
               </div>
-              <div className="col-6 ">
+              <div className="col-md-6 ">
                 <div className="sliderPhotoImg">
                   <img src={photoOne} alt='' />
                 </div>
