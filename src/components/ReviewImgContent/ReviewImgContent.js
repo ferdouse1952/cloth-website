@@ -11,7 +11,7 @@ const ReviewImgContent = (props) => {
             </div>
             <div className="testimonialtext-div ps-3">
                 <h2 className='fs-6 fw-normal'>{testimonialText}</h2>
-                <p className='text-danger'><small>{testimonialMail}</small></p>
+                <p className='text-light'><small>{testimonialMail}</small></p>
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ import Sliders from "../Sliders/Sliders";
 import Sponsored from "../Sponsored/Sponsored";
 import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 import "./Home.css";
-import animSvg from "./anim.svg";
+// import animSvg from "./anim.svg";
 
 const Home = (props) => {
   const { handleAddToCart, products } = props;
