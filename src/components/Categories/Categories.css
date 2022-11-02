@@ -1,0 +1,31 @@
+.accordion-div .accordion-item{
+    border:none ;
+}
+.accordion-div button{
+    font-size: 14px;
+    font-weight: 500;
+}
+.accordion-div .accordion-item button:focus{
+    box-shadow: none;
+    
+}
+.accordion-div .accordion-button::after{
+    background-image: url(../../Images/plus-solid.svg);
+    background-position: center;
+    width: 12px;
+    height: 12px;
+    
+}
+.accordion-div .accordion-button:not(.collapsed)::after{
+    background-image: url(../../Images/minus-solid.svg);
+    
+
+}
+.accordion-div .accordion-button:not(.collapsed){
+background-color: white;
+box-shadow: none;
+color: brown;
+}
+.accordion-button-div{
+    padding: 0px;
+}

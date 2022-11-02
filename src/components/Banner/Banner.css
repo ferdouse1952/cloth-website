@@ -1,0 +1,30 @@
+/* .banner-row{
+    padding-left: 12px;
+} */
+.banner-col{
+    background-color: #B5C3CD;
+}
+.banner-img{
+    height: 450px;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.submit-btn{
+    background-color: brown;
+    border: none;
+    padding: 10px 22px;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    color: white;
+}
+
+@media screen and (max-width:991px) {
+    /* .banner-row .form-col{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+     */
+}

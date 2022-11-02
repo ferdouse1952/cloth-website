@@ -1,0 +1,109 @@
+.icon-box{
+    position: relative;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 28px;
+    /* margin: 0 auto; */
+    /* float: left; */
+    background-color: rgb(174, 174, 192);
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.icon-colorful{
+    transform: translateX(18px);
+    /* padding: 20px; */
+    color: rgb(39, 5, 5);
+    transition: 0.3s ease;
+}
+.icon-white, .lock-icon-white, .phone-icon-white, .gift-icon-white{
+    transform: translateX(40px);
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.icon-box:hover {
+    background-color: rgb(39, 5, 5);
+}
+.icon-box:hover .icon-colorful{
+    transform: translateX(-40px);
+}
+.icon-box:hover .icon-white{
+    transform: translateX(-23px);
+    
+}
+.icon-box:hover .lock-icon-white{
+    transform: translateX(-6px);
+}
+.icon-box:hover .phone-icon-white{
+    transform: translateX(-12px);
+}
+.icon-box:hover .gift-icon-white{
+    transform: translateX(-12px);
+
+}
+
+/* Responsive */
+@media screen and (max-width:1520px) {
+    .whychooseus{
+        display:block !important;
+        
+       
+}
+    
+}
+@media screen and (max-width:1210px) {
+    .whychooseus h6{
+        font-size: 14px;
+        
+    }
+    
+}
+@media screen and (max-width:1210px) {
+    .whychooseus h6{
+        font-size: 12px;
+    }
+    .whychooseus p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .whychooseus{
+        display:flex !important;
+        
+        /* column-gap:0 40px !important; */
+}
+
+.icon-box{
+    font-size:22px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+.icon-colorful{
+    transform: translateX(10px);
+}
+} 
+@media screen and (max-width:725px) {
+    
+    .whychooseus{
+        /* display: block !important; */
+        display: grid !important;
+        place-items: center;
+        text-align: center;
+    }
+    
+}  
+@media screen and (max-width:614px) {
+    
+    .whychooseus{
+        display: grid !important;
+        place-items: center;
+        text-align: center;
+        
+    }
+    
+}  

@@ -1,0 +1,17 @@
+.testimonialbg-color{
+    background-color: #1A5AB5;
+}
+.testimonial-col{
+    padding-top: 100px;
+}
+.review-img{
+    width: 500px;
+    height: 400px;
+}
+.review-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Responsive */

@@ -1,0 +1,91 @@
+/* .menwomenkid-row .col-5{
+   padding-left: 2px;
+} */
+.womenModel-div{
+    height: 782px;
+    
+}
+.womenModel-div img{
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 100%;
+}
+.kidsModel-div{
+    background-color: rgb(164, 165, 169);
+    max-width: 780px;
+    height: 400px;
+}
+.kidsModel-div img{
+    width: 100%;
+    height: 100%;
+}
+.menModel-div{
+    background-color: #3d1c20;
+    max-width: 780px;
+    height: 375px;
+}
+.menModel-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.model-div{
+    position: relative;
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5e0a2667;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(1);
+  opacity: 0;
+  transition: .8s;
+  transition-property: transform;
+  
+}
+.model-div:hover .overlay{
+    opacity: 1;
+    transform: scaleY(0);
+}
+
+/* Responsive */
+
+@media screen and (max-width:1200px) {
+
+.womenModel-div{
+    /* max-width: 1000px; */
+    height: 600px;
+    
+}
+.kidsModel-div{
+    
+    /* max-width: 500px; */
+    height: 300px;
+}
+.menModel-div{
+    /* max-width: 500px; */
+    height: 292px;
+}
+}       
+@media screen and (max-width:768px) {
+
+.womenModel-div{
+    /* max-width: 1000px; */
+    height: 580px;
+    
+}
+.kidsModel-div{
+    
+    /* max-width: 500px; */
+    height: 285px;
+}
+.menModel-div{
+    /* max-width: 500px; */
+    height: 285px;
+}
+}       
+  

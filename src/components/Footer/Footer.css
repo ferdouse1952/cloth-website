@@ -1,0 +1,19 @@
+/* Responsiv */
+@media screen and (max-width:1200px) {
+    .footer-text h4{
+       font-size: 20px;
+    }
+    .footer-icon{
+        display: block !important;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .footer-row{
+        display: none;
+    }
+    .accordion-footer{
+        display: block !important;
+    }
+    
+}
