@@ -12,7 +12,7 @@ const Cloths = (props) => {
 
     return (
         <div className='container'>
-            <div className="row">
+            <div className="row pt-5">
                 <div className="col-lg-3 col-4 pt-5">
                     <div className=" border-top">
                         <Categories />
@@ -87,12 +87,12 @@ const Cloths = (props) => {
                                         <>
                                             <div class="d-flex">
 
-                                                <div class="col-md-4 pt-4">
+                                                <div class="col-5 pt-4">
                                                     <div className="allClothsimg-div">
                                                         <img src={img} alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-8 my-auto ps-3">
+                                                <div class="col-9 my-auto ps-3">
                                                     <div class="card-body">
                                                         <p class="card-text"><small class="text-muted">Good One Nayan</small></p>
                                                         <div className="star-icon fs-6 text-muted">
