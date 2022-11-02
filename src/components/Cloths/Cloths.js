@@ -53,7 +53,7 @@ const Cloths = (props) => {
                                     return (
                                         <>
                                             <div className="feature">
-                                            <div class="col container pt-5 pb-5">
+                                            <div class="col">
                                                 <div class="card h-100 pt-5 ferture-col">
                                                     <div className="feature-div mx-auto">
                                                         <img src={img} alt="" />
