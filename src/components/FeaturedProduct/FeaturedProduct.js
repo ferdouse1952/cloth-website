@@ -9,7 +9,7 @@ const FeaturedProduct = (props) => {
   const { handleAddToCart,products } = props;
 
   const settings = {
-   
+    
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -36,6 +36,7 @@ const FeaturedProduct = (props) => {
         {
           breakpoint: 480,
           settings: {
+            
             slidesToShow: 1,
             slidesToScroll: 1
           }

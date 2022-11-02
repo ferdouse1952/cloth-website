@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const SponsoredImg = (props) => {
     const {img}=props.sponsoredimg;
     return (
-        <div className='pb-5 pt-5'>
+        <div className='pb-5 pt-5 sponsorImg'>
             <img src={img} alt="" />
         </div>
     );
