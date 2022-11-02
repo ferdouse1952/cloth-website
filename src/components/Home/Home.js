@@ -17,7 +17,7 @@ const Home = (props) => {
     <div className="left-right">
       <Sliders />
       <WhyChooseUs />
-      <hr className="m-auto container mt-5" />
+      <hr className="container mt-5" />
       <div className="container">
         <FeaturedProduct
           handleAddToCart={handleAddToCart}
