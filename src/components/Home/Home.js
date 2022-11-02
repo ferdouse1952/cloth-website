@@ -14,7 +14,7 @@ const Home = (props) => {
   const { handleAddToCart, products } = props;
 
   return (
-    <div className="left-right">
+    <div>
       <Sliders />
       <WhyChooseUs />
       <hr className="container mt-5" />

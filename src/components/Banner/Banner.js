@@ -5,7 +5,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <div className="container pt-5 pb-5">
-            <div className="row banner-row mx-0">
+            <div className="row banner-row">
                 <div className="col-lg-8 col-12 d-flex banner-col justify-content-around align-items-center">
                     <div className="banner-img">
                         <img src={banner} alt="" />
