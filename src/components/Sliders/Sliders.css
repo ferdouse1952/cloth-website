@@ -30,5 +30,35 @@
 }
 /* responsive */
 
+@media screen and (max-width:1400px) {
+   .slider-text{
+    font-size: 100px;
+   }
+}
+@media screen and (max-width:768px) {
+   .slider-text{
+    font-size: 80px;
+   }
+   .slider-span-text{
+    font-size: 40px;
+   }
+}
+@media screen and (max-width:550px) {
+   .slider-text{
+    font-size: 60px;
+   }
+   .slider-span-text{
+    font-size: 30px;
+   }
+}
+@media screen and (max-width:420px) {
+   .slider-text{
+    font-size: 30px;
+   }
+   .slider-span-text{
+    font-size: 15px;
+   }
+}
+
 
 

@@ -47,10 +47,10 @@ const Sliders = () => {
         <div className='sliderOne slider'>
           <div className="container">
             <div className="row d-flex justify-content-center align-items-center">
-              <div className="col-md-6">
+              <div className="col-8 col-lg-6">
                 <h1 className='text-muted slider-text'>Women's <span className='slider-span-text'>T-Shirt</span></h1>
               </div>
-              <div className="col-md-6 ">
+              <div className="col-4 col-lg-6">
                 <div className="sliderPhotoImg">
                   <img src={photoOne} alt='' />
                 </div>
@@ -61,10 +61,10 @@ const Sliders = () => {
         <div className='sliderTwo slider'>
           <div className="container">
             <div className="row justify-content-center align-items-center">
-              <div className="col-md-6">
+              <div className="col-6">
                 <h1 className='slider-text'>Men's <span className='slider-span-text'>T-Shirt</span></h1>
               </div>
-              <div className="col-md-6 ">
+              <div className="col-6 ">
                 <div className="sliderPhotoImg">
                   <img src={photoTwo} alt='' />
                 </div>

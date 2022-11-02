@@ -77,7 +77,7 @@ form:hover .fa{
 }
 
 /* Responsive */
-/* @media screen and (max-width:1160px){
+@media screen and (max-width:1160px){
     .navbar-menu .nav-link{
         font-size: 15px;
     }
@@ -95,4 +95,4 @@ form:hover .fa{
         
     }
     
-} */
+}
