@@ -58,6 +58,12 @@
    .slider-span-text{
     font-size: 15px;
    }
+   .sliderPhotoImg{
+    height: 300px;
+   }
+   .slider{
+    height: 50vh;
+}
 }
 
 
