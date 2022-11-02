@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Blog from "./components/Blog/Blog";
-import Cart from "./components/Cart/Cart";
 import Cloths from "./components/Cloths/Cloths";
 // import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -71,9 +69,7 @@ const App = () => {
           path="/cloths"
           element={<Cloths handleAddToCart={handleAddToCart} filterResult={filterResult} data={data} />}
         ></Route>
-        <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
-      </Routes>
+       </Routes>
       {/* <Footer></Footer> */}
     </div>
   );

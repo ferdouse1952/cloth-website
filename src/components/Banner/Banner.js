@@ -32,12 +32,8 @@ const Banner = () => {
                         <div>
                             <button className="submit-btn">Subscribe</button>
                         </div>
-
-
                     </div>
                 </div>
-
-
             </div>
 
         </div>
