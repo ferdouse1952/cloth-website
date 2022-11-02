@@ -137,17 +137,6 @@ const Header = (props) => {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <table className="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Product Name</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">price</th>
-                <th scope="col">Remove</th>
-              </tr>
-            </thead>
-          </table>
           <h6>Total Price: ${total}.00</h6>
           <h6>Tax: {tax}</h6>
           <h6 className="fw-bold">Grand Total: {grandTotal}</h6>
