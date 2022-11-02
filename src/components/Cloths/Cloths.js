@@ -2,14 +2,6 @@ import React  from 'react';
 import { Link } from 'react-router-dom';
 import Categories from '../Categories/Categories';
 import Filter from '../Filter/Filter';
-// import featuredproduct01 from '../../Images/product-img01.jpg';
-// import featuredproduct02 from '../../Images/product-img02.jpg';
-// import featuredproduct03 from '../../Images/product-img03.jpg';
-// import featuredproduct04 from '../../Images/product-img04.jpg';
-// import featuredproduct05 from '../../Images/product-img05.jpg';
-// import featuredproduct06 from '../../Images/product-img06.jpg';
-// import featuredproduct07 from '../../Images/product-img07.jpg';
-// import featuredproduct08 from '../../Images/product-img08.jpg';
 import './Cloths.css';
 import { allProducts } from '../../featureimg';
 
@@ -21,10 +13,6 @@ const Cloths = (props) => {
     return (
         <div className='container'>
             <div className="row">
-                <div className="cloths-bg">
-                    <h5>CLOTHES</h5>
-                </div>
-            
                 <div className="col-lg-3 col-4 pt-5">
                     <div className=" border-top">
                         <Categories />
@@ -37,9 +25,6 @@ const Cloths = (props) => {
                     <div className=" border-top">
                         <Filter />
                     </div>
-                    
-
-
                 </div>
                 <div className="col-lg-9 col-8 pt-5">
                     {/* navTabs */}
