@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Cloths from "./components/Cloths/Cloths";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import { allProducts } from "./featureimg";
@@ -70,7 +70,7 @@ const App = () => {
           element={<Cloths handleAddToCart={handleAddToCart} filterResult={filterResult} data={data} />}
         ></Route>
        </Routes>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };
