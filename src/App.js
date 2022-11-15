@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Orders from "./components/Orders/Orders";
 import { allProducts } from "./featureimg";
-import { addToDb, getStoredCart } from "./utilities/fakedb";
+import { addToDb, getStoredCart, removeFromDb } from "./utilities/fakedb";
 
 const App = () => {
   // product filtering states and function passing from here (parent) to Cloths & Header components (child)
@@ -60,6 +60,7 @@ const App = () => {
   const handleRemoveProduct = (product) => {
     const rest = cart.filter((pd) => pd.id !== product.id);
     setCart(rest);
+    removeFromDb(product.id);
   };
 
   return (
