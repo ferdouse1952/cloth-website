@@ -6,8 +6,6 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Orders from "./components/Orders/Orders";
 import { allProducts } from "./featureimg";
-// import useCart from "./hooks/UseCards";
-// import useProducts from "./hooks/UseProducts";
 import { addToDb, getStoredCart } from "./utilities/fakedb";
 
 const App = () => {
