@@ -58,6 +58,17 @@ const Header = (props) => {
                   Cloths
                 </Link>
               </li>
+              <li className="nav-item pe-2">
+                <Link
+                  as={Link}
+                  to="/orders"
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                >
+                  Order Items
+                </Link>
+              </li>
 
               {/* <li className="nav-item pe-2">
                                 <Link onClick={() => { props.filterResult('Men') }}  className="nav-link" href="#">Men</Link>

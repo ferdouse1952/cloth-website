@@ -4,7 +4,10 @@ import Cloths from "./components/Cloths/Cloths";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Orders from "./components/Orders/Orders";
 import { allProducts } from "./featureimg";
+// import useCart from "./hooks/UseCards";
+// import useProducts from "./hooks/UseProducts";
 import { addToDb, getStoredCart } from "./utilities/fakedb";
 
 const App = () => {
@@ -22,8 +25,8 @@ const App = () => {
   const [cart, setCart] = useState([]);
   useEffect(() => {
     fetch("products.json")
-      .then(res => res.json())
-      .then(data => setProducts(data));
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
   }, []);
 
   useEffect(() => {
@@ -41,20 +44,24 @@ const App = () => {
   }, [products]);
 
   const handleAddToCart = (selectedProduct) => {
-    let newCart=[];
-    const exists = cart.find(product=>product.id===selectedProduct.id);
-    if(!exists){
-      selectedProduct.quantity=1;
-      newCart=[...cart, selectedProduct];
-    }
-    else{
-      const rest = cart.filter(product => product.id !== selectedProduct.id);
-      exists.quantity=exists.quantity+1;
-      newCart=[...rest, exists];
+    let newCart = [];
+    const exists = cart.find((product) => product.id === selectedProduct.id);
+    if (!exists) {
+      selectedProduct.quantity = 1;
+      newCart = [...cart, selectedProduct];
+    } else {
+      const rest = cart.filter((product) => product.id !== selectedProduct.id);
+      exists.quantity = exists.quantity + 1;
+      newCart = [...rest, exists];
     }
 
     setCart(newCart);
     addToDb(selectedProduct.id);
+  };
+
+  const handleRemoveProduct = (product) => {
+    const rest = cart.filter((pd) => pd.id !== product.id);
+    setCart(rest);
   };
 
   return (
@@ -63,13 +70,27 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={<Home handleAddToCart={handleAddToCart} products={products} />}
+          element={
+            <Home handleAddToCart={handleAddToCart} products={products} />
+          }
         ></Route>
         <Route
           path="/cloths"
-          element={<Cloths handleAddToCart={handleAddToCart} filterResult={filterResult} data={data} />}
+          element={
+            <Cloths
+              handleAddToCart={handleAddToCart}
+              filterResult={filterResult}
+              data={data}
+            />
+          }
         ></Route>
-       </Routes>
+        <Route
+          path="/orders"
+          element={
+            <Orders handleRemoveProduct={handleRemoveProduct} cart={cart} />
+          }
+        ></Route>
+      </Routes>
       <Footer></Footer>
     </div>
   );

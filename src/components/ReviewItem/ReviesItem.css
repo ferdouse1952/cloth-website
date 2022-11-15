@@ -1,0 +1,9 @@
+.reviewImg{
+    width: 100px;
+}
+.reviewImg img{
+    width: 100%;
+}
+.delete-container button{
+    padding: 5px 15px;
+}
