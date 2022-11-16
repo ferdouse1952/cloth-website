@@ -58,35 +58,6 @@ const Header = (props) => {
                   Cloths
                 </Link>
               </li>
-              <li className="nav-item pe-2">
-                <Link
-                  as={Link}
-                  to="/orders"
-                  className="nav-link"
-                  aria-current="page"
-                  href="#"
-                >
-                  Order Items
-                </Link>
-              </li>
-
-              {/* <li className="nav-item pe-2">
-                                <Link onClick={() => { props.filterResult('Men') }}  className="nav-link" href="#">Men</Link>
-                            </li>
-                            <li className="nav-item pe-2">
-                                <Link onClick={() => { props.filterResult('Women') }}  className="nav-link" href="#">Women</Link>
-                            </li> */}
-
-              {/* <li className="nav-item pe-2">
-                <Link as={Link} to="/blog" className="nav-link" href="#">
-                  Blog
-                </Link>
-              </li> */}
-              {/* <li className="nav-item pe-2">
-                <Link as={Link} to="/cart" className="nav-link" href="#">
-                  Cart
-                </Link>
-              </li> */}
             </ul>
             {/* search-user-cart */}
             <div className="header-right d-flex fs-3">
@@ -148,20 +119,18 @@ const Header = (props) => {
           ></button>
         </div>
         <div className="offcanvas-body">
-          {/* <table className="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Product Name</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">price</th>
-                <th scope="col">Remove</th>
-              </tr>
-            </thead>
-          </table> */}
           <h6>Total Price: ${total}.00</h6>
           <h6>Tax: {tax}</h6>
           <h6 className="fw-bold">Grand Total: {grandTotal}</h6>
+          <Link
+            as={Link}
+            to="/orders"
+            className="nav-link"
+            aria-current="page"
+            href="#"
+          >
+            <button className="border-0 orderItemsbtn rounded-3">Order Items</button>
+          </Link>
         </div>
       </div>
     </div>

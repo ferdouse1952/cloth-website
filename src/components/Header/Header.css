@@ -75,7 +75,14 @@ form:hover .fa{
 .offcanvasTwo{
     width: 400px !important;
 }
-
+.offcanvas-backdrop{
+    z-index:0;
+}
+.orderItemsbtn{
+    background-color: rgb(125, 125, 160);
+    padding: 10px;
+    color: #fff;
+}
 /* Responsive */
 @media screen and (max-width:1160px){
     .navbar-menu .nav-link{
