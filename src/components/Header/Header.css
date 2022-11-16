@@ -76,6 +76,7 @@ form:hover .fa{
     width: 400px !important;
 }
 .offcanvas-backdrop{
+    background-color: #fff;
     z-index:0;
 }
 .orderItemsbtn{
